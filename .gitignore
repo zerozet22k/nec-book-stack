@@ -1,0 +1,73 @@
+# --- environment / secrets ---
+.env
+.env.*
+!.env.example
+!.env*.example
+
+# --- logs ---
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# --- Node / TypeScript ---
+node_modules/
+dist/
+build/
+coverage/
+*.tsbuildinfo
+
+# --- general cache ---
+.cache/
+.eslintcache
+.tmp/
+temp/
+tmp/
+
+# --- backend app: nec-book ---
+nec-book/.env
+
+# --- React Native / mobile: nec-book-app ---
+nec-book-app/node_modules/
+nec-book-app/build/
+nec-book-app/.bundle/
+
+# Android
+nec-book-app/android/.gradle/
+nec-book-app/android/build/
+nec-book-app/android/app/build/
+nec-book-app/android/app/.cxx/
+nec-book-app/android/.kotlin/
+nec-book-app/android/local.properties
+
+# iOS
+nec-book-app/ios/Pods/
+nec-book-app/ios/build/
+nec-book-app/ios/.xcode.env.local
+
+# Metro / RN temp
+nec-book-app/.metro-health-check*
+nec-book-app/.react-native/
+
+# --- Python / desktop: nec-book-desktop-app ---
+nec-book-desktop-app/.venv/
+nec-book-desktop-app/venv/
+nec-book-desktop-app/env/
+nec-book-desktop-app/__pycache__/
+nec-book-desktop-app/**/__pycache__/
+nec-book-desktop-app/*.pyc
+nec-book-desktop-app/*.pyo
+nec-book-desktop-app/*.pyd
+
+# --- optional binary / package outputs ---
+*.apk
+*.aab
+*.ipa
